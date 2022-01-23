@@ -1,10 +1,13 @@
 import type { NextPage } from 'next'
+import {
+  FooterContainer
+} from './styles'
 
 const Footer: NextPage = () => {
   return (
-    <footer>
+    <FooterContainer>
       <p><span>PokeNext</span> &copy; 2022</p>
-    </footer>
+    </FooterContainer>
   )
 }
 

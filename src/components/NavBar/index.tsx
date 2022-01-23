@@ -7,7 +7,6 @@ import {
   Logo,
   LogoTitle,
   LinkItems,
-  LinkItemsList,
 } from './styles'
 
 const NavBar: NextPage = () => {
