@@ -1,4 +1,10 @@
 import type { NextPage } from 'next'
+import Image from 'next/image'
+import pokeballImage from '../../assets/images/pokeball.png'
+import {
+  TitleContainer,
+  PokemonContainer,
+} from './styles'
 
 interface Props{
   pokemons: {
@@ -10,14 +16,17 @@ interface Props{
 
 const HomePage: NextPage<Props> = ({ pokemons }) => {
   return (
-    <div>
-      <h1>PokeNext</h1>
-      <ul>
+    <>
+      <TitleContainer>
+        <h1>Poke<span>Next</span></h1>
+        <Image src={pokeballImage} width="50" height="50" alt="PokeNext" />
+      </TitleContainer>
+      <PokemonContainer>
         {pokemons.map((pokemon) => (
-          <li key={pokemon.id}>{pokemon.name}</li>
+          <p key={pokemon.id}>{pokemon.name}</p>
         ))}
-      </ul>
-    </div>
+      </PokemonContainer>
+    </>
   )
 }
 
