@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import pokeballImage from '../../assets/images/pokeball.png'
+import Card from '../../components/Card'
 import {
   TitleContainer,
   PokemonContainer,
@@ -23,7 +24,7 @@ const HomePage: NextPage<Props> = ({ pokemons }) => {
       </TitleContainer>
       <PokemonContainer>
         {pokemons.map((pokemon) => (
-          <p key={pokemon.id}>{pokemon.name}</p>
+          <Card key={pokemon.id} pokemon={pokemon} />
         ))}
       </PokemonContainer>
     </>
