@@ -9,7 +9,7 @@ export const FooterContainer = styled.footer`
   height: 150px;
   border-top: 3px solid #111;
   color: #fff;
-  position:absolute;
+  position:fixed;
   bottom:0;
 
   span {
