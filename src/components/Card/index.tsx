@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+
 import {
   CardContainer
 } from './styles'
@@ -16,7 +17,7 @@ const Card: NextPage<Props> = ({ pokemon }) => {
   return (
     <CardContainer>
       <Image 
-        src={`https://cdn.traction.one/pokedex/pokemon/${pokemon.id}.png`}
+        src={`${process.env.NEXT_PUBLIC_CDN_URL}/${pokemon.id}.png`}
         width="120"
         height="120"
         alt={pokemon.name}
