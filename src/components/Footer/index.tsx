@@ -6,7 +6,7 @@ import {
 const Footer: NextPage = () => {
   return (
     <FooterContainer>
-      <p><span>PokeNext</span> &copy; 2022</p>
+      <p><span>PokeNext</span> &copy; {(new Date().getFullYear())}</p>
     </FooterContainer>
   )
 }

@@ -21,7 +21,7 @@ const NavBar: NextPage = () => {
           <Link href='/'><a>Home</a></Link>
         </li>
         <li>
-          <Link href='/about'><a>Sobre</a></Link>
+          <Link href='/about'><a>About</a></Link>
         </li>
       </LinkItems>
     </NavBarContainer>
