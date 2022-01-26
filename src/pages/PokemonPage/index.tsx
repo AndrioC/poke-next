@@ -34,7 +34,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
         alt={pokemon.name}
       />
       <div>
-        <h3>Número:</h3>
+        <h3>Number:</h3>
         <p>#{pokemon.id}</p>
       </div>
       <div>
@@ -47,11 +47,11 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
       </div>
       <PokemonInfo>
         <PokemonDataHeight>
-          <h4>Altura: </h4>
+          <h4>Height: </h4>
           <p>{pokemon.height * 10} cm</p>
         </PokemonDataHeight>
         <PokemonDataWeight>
-          <h4>Peso: </h4>
+          <h4>Weight: </h4>
           <p>{pokemon.weight / 10} kg</p>
         </PokemonDataWeight>
       </PokemonInfo>
