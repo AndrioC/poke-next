@@ -24,7 +24,7 @@ const Card: NextPage<Props> = ({ pokemon }) => {
       />
       <h3>{pokemon.name}</h3>
       <Link href={`/pokemon/${pokemon.id}`}>
-        <a>Detalhes</a>
+        <a>Details</a>
       </Link>
     </CardContainer>
   )

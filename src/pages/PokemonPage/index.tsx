@@ -38,7 +38,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
         <p>#{pokemon.id}</p>
       </div>
       <div>
-        <h3>Tipo:</h3>
+        <h3>Type:</h3>
         <PokemonType>
           {pokemon.types.map((item, index) => (
             <SpanType type={item.type.name} key={index}>{item.type.name}</SpanType>
